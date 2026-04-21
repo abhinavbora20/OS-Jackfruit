@@ -87,6 +87,8 @@ sudo ./environment-check.sh
 
 ```bash
 mkdir rootfs-base
+# Download and extract the Alpine Mini-RootFS
+# Note: Use 'aarch64' for Mac M1/M2 VMs or 'x86_64' for standard Intel/AMD VMs
 wget https://dl-cdn.alpinelinux.org/alpine/v3.20/releases/x86_64/alpine-minirootfs-3.20.3-x86_64.tar.gz
 tar -xzf alpine-minirootfs-3.20.3-x86_64.tar.gz -C rootfs-base
 ```
