@@ -1,3 +1,4 @@
+<img width="1853" height="176" alt="5_OS" src="https://github.com/user-attachments/assets/99c8e28c-3598-44a8-9314-e7a45345f921" />
 # Multi-Container Runtime
 
 A lightweight Linux container runtime written in C, featuring a long-running parent supervisor, concurrent bounded-buffer logging, a supervisor CLI, and a kernel-space memory monitor (LKM).
@@ -210,20 +211,63 @@ engine stop  <id>
 ---
 
 ## 3. Demo Screenshots
+# 📸 Screenshots & Demonstrations
 
-> Replace each placeholder below with your actual annotated screenshot.
+---
 
-| # | What It Demonstrates | Screenshot |
-|---|----------------------|------------|
-| 1 | **Multi-container supervision** — two or more containers running under one supervisor | _(screenshot)_ |
-| 2 | **Metadata tracking** — `ps` output showing tracked container metadata | _(screenshot)_ |
-| 3 | **Bounded-buffer logging** — log file contents and evidence of producer/consumer activity | _(screenshot)_ |
-| 4 | **CLI and IPC** — CLI command issued, supervisor responding over the control channel | _(screenshot)_ |
-| 5 | **Soft-limit warning** — `dmesg` showing a soft-limit warning event | _(screenshot)_ |
-| 6 | **Hard-limit enforcement** — `dmesg` showing a container killed after exceeding the hard limit, supervisor metadata updated | _(screenshot)_ |
-| 7 | **Scheduling experiment** — terminal output / measurements showing observable differences between configurations | _(screenshot)_ |
-| 8 | **Clean teardown** — `ps aux` output and supervisor exit messages confirming no zombies remain | _(screenshot)_ |
+## 1. Multi-container Supervision  
+**What it demonstrates:** Two or more containers running under one supervisor  
 
+![Multi-container Supervision](https://github.com/user-attachments/assets/c7ede66f-10b6-457d-a94b-2e535b7b38bc)
+
+---
+
+## 2. Metadata Tracking  
+**What it demonstrates:** `ps` output showing tracked container metadata  
+
+![Metadata Tracking](https://github.com/user-attachments/assets/433f78fb-6d7a-44ac-9a24-f7666e7c03e2)
+
+---
+
+## 3. Bounded-Buffer Logging  
+**What it demonstrates:** Log file contents and evidence of producer/consumer activity  
+
+<img width="826" height="738" alt="3_OS" src="https://github.com/user-attachments/assets/6237c9fe-9c16-46ac-be98-f7f197016ef5" />
+
+---
+
+## 4. CLI and IPC  
+**What it demonstrates:** CLI command issued, supervisor responding over the control channel  
+
+<img width="1847" height="102" alt="4_OS" src="https://github.com/user-attachments/assets/0e88b715-717e-4cc4-8094-ba894dfdf733" />
+<img width="1853" height="176" alt="5_OS" src="https://github.com/user-attachments/assets/8b6164f5-0808-49ed-982c-1bd32bf0d02e" />
+
+---
+
+## 5. Soft-Limit Warning  
+**What it demonstrates:** `dmesg` showing a soft-limit warning event  
+<img width="1853" height="176" alt="5_OS" src="https://github.com/user-attachments/assets/8b6164f5-0808-49ed-982c-1bd32bf0d02e" />
+
+---
+
+## 6. Hard-Limit Enforcement  
+**What it demonstrates:** `dmesg` showing a container killed after exceeding the hard limit, with supervisor metadata updated  
+<img width="1853" height="176" alt="5_OS" src="https://github.com/user-attachments/assets/8b6164f5-0808-49ed-982c-1bd32bf0d02e" />
+
+
+---
+
+## 7. Scheduling Experiment  
+**What it demonstrates:** Terminal output or measurements showing observable differences between configurations  
+
+<img width="1853" height="176" alt="5_OS" src="https://github.com/user-attachments/assets/8b6164f5-0808-49ed-982c-1bd32bf0d02e" />
+
+---
+
+## 8. Clean Teardown  
+**What it demonstrates:** `ps aux` output and supervisor exit messages confirming no zombie processes remain  
+
+ps -o pid,ppid,stat,cmd | grep Z
 ---
 
 ## 4. Engineering Analysis
