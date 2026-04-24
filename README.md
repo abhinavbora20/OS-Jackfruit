@@ -1,4 +1,3 @@
-<img width="1853" height="176" alt="5_OS" src="https://github.com/user-attachments/assets/99c8e28c-3598-44a8-9314-e7a45345f921" />
 # Multi-Container Runtime
 
 A lightweight Linux container runtime written in C, featuring a long-running parent supervisor, concurrent bounded-buffer logging, a supervisor CLI, and a kernel-space memory monitor (LKM).
